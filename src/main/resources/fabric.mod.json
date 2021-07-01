@@ -21,6 +21,9 @@
     "main": [
       "com.mystic.doublecrafter.DoubleCrafter"
     ],
+    "rei_plugins": [
+      "com.mystic.doublecrafter.compat.DoubleCraftingPlugin"
+    ],
     "client": [
       "com.mystic.doublecrafter.setup.ClientSetup"
     ]

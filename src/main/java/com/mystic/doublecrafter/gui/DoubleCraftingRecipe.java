@@ -1,7 +1,6 @@
 package com.mystic.doublecrafter.gui;
 
 import com.mystic.doublecrafter.utils.Reference;
-import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -10,6 +9,8 @@ import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class DoubleCraftingRecipe implements Recipe<Inventory> {
     private final Ingredient inputA;
