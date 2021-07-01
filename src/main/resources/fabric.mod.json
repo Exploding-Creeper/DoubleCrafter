@@ -6,7 +6,7 @@
   "name": "Example Mod",
   "description": "Merge two recipes to get an output",
   "authors": [
-    "Mysticpasta1"
+    "Mysticpasta1, Jakob"
   ],
   "contact": {
     "homepage": "",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.mystic.doublecrafter.DoubleCrafter"
+    ],
+    "client": [
+      "com.mystic.doublecrafter.setup.ClientSetup"
     ]
   },
   "mixins": [

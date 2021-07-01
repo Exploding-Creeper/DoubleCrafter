@@ -1,0 +1,11 @@
+{
+  "type": "doublecrafter:double_crafting",
+  "inputA" : {
+    "item": "minecraft:redstone"
+  },
+  "inputB": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "outputItem": "minecraft:cobblestone",
+  "outputAmount": "20"
+}

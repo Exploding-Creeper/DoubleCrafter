@@ -1,0 +1,11 @@
+{
+  "type": "doublecrafter:double_crafting",
+  "inputA" : {
+    "item": "minecraft:netherite_ingot"
+  },
+  "inputB": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "outputItem": "minecraft:netherite_pickaxe",
+  "outputAmount": "1"
+}

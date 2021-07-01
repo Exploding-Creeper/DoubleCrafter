@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "WSW",
+    "   "
+  ],
+  "key":
+  {
+    "W":
+    {
+      "item": "minecraft:crafting_table"
+    },
+
+    "S":
+    {
+      "item": "minecraft:honeycomb"
+    }
+  },
+  "result":
+  {
+    "item": "doublecrafter:double_crafter_block",
+    "count": 1
+  }
+}
