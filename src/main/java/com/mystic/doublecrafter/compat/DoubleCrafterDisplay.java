@@ -16,7 +16,7 @@ public class DoubleCrafterDisplay implements Display {
     protected List<EntryIngredient> inputA;
     protected List<EntryIngredient> inputB;
     protected List<EntryIngredient> output;
-
+    protected ArrayList<EntryIngredient> list;
     public DoubleCrafterDisplay(DoubleCraftingRecipe recipe) {
         this.display = recipe;
 
@@ -25,11 +25,12 @@ public class DoubleCrafterDisplay implements Display {
         this.inputB = EntryIngredients.ofIngredients(List.of(recipe.getInputB()));
 
         this.output = Collections.singletonList(EntryIngredients.of(recipe.getOutput()));
+
+        list = new ArrayList<>();
     }
 
     @Override
     public @NotNull List<EntryIngredient> getInputEntries() {
-        ArrayList<EntryIngredient> list = new ArrayList<>();
         list.addAll(inputA);
         list.addAll(inputB);
         return list;

@@ -68,7 +68,7 @@ public class DoubleCraftingCategory implements DisplayCategory<DoubleCrafterDisp
         widgets.add(Widgets.createResultSlotBackground(new Point(origin.x + 95, origin.y + 19)));
         widgets.add(Widgets.createSlot(new Point(origin.x + 95, origin.y + 19)).entries(recipeDisplay.getOutputEntries().get(0)).disableBackground().markOutput());
 
-        widgets.add(Widgets.createTexturedWidget(new Identifier(Reference.MODID, "textures/gui/double_crafter_gui.png"), origin.x + 57, origin.y + 11, 176, 0, 32, 32));
+        widgets.add(Widgets.createTexturedWidget(new Identifier(Reference.MODID, "textures/gui/double_crafter_gui.png"), origin.x + 57, origin.y + 11, 176, 0, 211, 205));
 
         return widgets;
     }
