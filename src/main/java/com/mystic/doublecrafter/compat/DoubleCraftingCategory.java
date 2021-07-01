@@ -52,9 +52,9 @@ public class DoubleCraftingCategory implements DisplayCategory<DoubleCrafterDisp
         List<EntryIngredient> inputs = recipeDisplay.getInputEntries();
         List<Slot> slots = new ArrayList<>();
 
-        for (int y = 0; y < 3; y++) {
-            for (int x = 0; x < 3; x++) {
-                slots.add(Widgets.createSlot(new Point(origin.x + 1 + x * 18, origin.y + 1 + y * 18)).markInput());
+        for (int y = 0; y < 1; y++) {
+            for (int x = 0; x < 2; x++) {
+                slots.add(Widgets.createSlot(new Point(origin.x + 20 + x * 18, origin.y + 1 * 18)).markInput());
             }
         }
 
@@ -64,11 +64,11 @@ public class DoubleCraftingCategory implements DisplayCategory<DoubleCrafterDisp
             }
         }
 
+        widgets.add(Widgets.createArrow(new Point(origin.x + 3.5 * 18, origin.y + 1 * 18)));
+
         widgets.addAll(slots);
         widgets.add(Widgets.createResultSlotBackground(new Point(origin.x + 95, origin.y + 19)));
         widgets.add(Widgets.createSlot(new Point(origin.x + 95, origin.y + 19)).entries(recipeDisplay.getOutputEntries().get(0)).disableBackground().markOutput());
-
-        widgets.add(Widgets.createTexturedWidget(new Identifier(Reference.MODID, "textures/gui/double_crafter_gui.png"), origin.x + 57, origin.y + 11, 176, 0, 211, 205));
 
         return widgets;
     }

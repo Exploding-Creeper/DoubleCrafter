@@ -27,12 +27,12 @@ public class DoubleCrafterDisplay implements Display {
         this.output = Collections.singletonList(EntryIngredients.of(recipe.getOutput()));
 
         list = new ArrayList<>();
+        list.addAll(inputA);
+        list.addAll(inputB);
     }
 
     @Override
     public @NotNull List<EntryIngredient> getInputEntries() {
-        list.addAll(inputA);
-        list.addAll(inputB);
         return list;
     }
 
