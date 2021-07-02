@@ -28,9 +28,6 @@
       "com.mystic.doublecrafter.setup.ClientSetup"
     ]
   },
-  "mixins": [
-    "doublecrafter.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
