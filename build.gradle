@@ -10,6 +10,12 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+// Jenkins
+if (System.getenv('BUILD_NUMBER') != null) {
+    version = "dev-" + System.getenv('BUILD_NUMBER')
+    jar.archiveName = archivesBaseName + "-dev-" + System.getenv('BUILD_NUMBER') + ".jar"
+}
+
 repositories {
 	maven { url "https://maven.shedaniel.me/" }
 }
